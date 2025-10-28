@@ -1,0 +1,254 @@
+%%%%
+% Vindya Kodithuwakku — Business Analyst Intern CV (2025)
+% Final polished version — fixed alignment, green theme, 2 pages
+%%%%
+\documentclass[letterpaper,12pt]{article}
+
+%====================%
+% Dependencies
+%====================%
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{charter}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%====================%
+% Colors
+%====================%
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{0e6e55}
+
+%====================%
+% Margins & Layout
+%====================%
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.4in}
+
+\setstretch{1.12}
+\setlength{\parskip}{1pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{1pt}
+\setlength{\parindent}{0pt}
+\flushbottom
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%====================%
+% Section Formatting
+%====================%
+\titleformat{\section}{
+  \vspace{-10pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+%====================%
+% Custom Commands
+%====================%
+\newenvironment{resume_list}{
+  \vspace{-1pt}
+  \begin{itemize}[itemsep=2pt, leftmargin=14pt]
+}{
+  \end{itemize}\vspace{-2pt}
+}
+\renewcommand\labelitemi{--}
+\setlist[itemize]{topsep=2pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+
+%====================%
+% Document Start
+%====================%
+\begin{document}
+\fontsize{11}{13}\selectfont
+\justifying
+
+%----------------------------------%
+% HEADER
+%----------------------------------%
+\begin{center}
+{\Huge\color{accentTitle}\textbf{Vindya Kodithuwakku}}\\[3pt]
+{\large\textbf{Business Analyst Intern}}\\[4pt]
+\href{mailto:vindyasubodhi@gmail.com}{\faEnvelope~vindyasubodhi@gmail.com} ~
+\href{https://github.com/vindyakodithuwakku02}{\faGithub~github.com/vindyakodithuwakku02} ~
+\href{https://www.linkedin.com/in/vindya-kodithuwakku-bb6187202}{\faLinkedin~linkedin.com/in/vindya-kodithuwakku}\\[2pt]
+\href{tel:+94713602885}{\faPhone~+94 71 360 2885} ~
+\faMapMarker*~Galle, Sri Lanka ~
+\href{https://vindyakodithuwakku02.github.io/my_portfolio/}{\faGlobe~Portfolio}\\[4pt]
+{\color{accentLine}\hrule}
+\end{center}
+\fontsize{12}{13}\selectfont
+
+%----------------------------------%
+% PROFILE SUMMARY
+%----------------------------------%
+\vspace{-20pt}
+\section{Profile Summary}
+\vspace{-2pt}
+\justifying
+Highly motivated and analytical undergraduate with a strong passion for business analysis, data-driven decision-making, and process improvement. Experienced in gathering requirements, analyzing business workflows, and supporting Agile teams. Skilled at transforming stakeholder needs into actionable insights and solutions that improve operational efficiency and business outcomes.
+
+%----------------------------------%
+% EDUCATION
+%----------------------------------%
+\section{Education}
+\vspace{-1pt}
+
+\textbf{BSc (Hons) in Computing \& Information Systems (UG)} \hfill 2023 – Present\\
+Sabaragamuwa University of Sri Lanka\\
+Current GPA: 3.77 / 4.00
+
+\vspace{5pt}
+\noindent\textbf{Sanghamitta Balika Vidyalaya – Galle} \hfill 2013 – 2021\\
+G.C.E. A/L (Physical Science) – Combined Maths (B), Chemistry (B), Physics (C) — 2021\\
+G.C.E. O/L – 9 A Passes — 2018
+
+%----------------------------------%
+% TECHNICAL SKILLS
+%----------------------------------%
+\section{Technical Skills}
+\vspace{-1pt}
+
+\textbf{Tools \& Platforms:} Power BI, Excel, Tableau, Jira, Confluence, Microsoft 365, Figma, Git \& GitHub\\[3pt]
+\textbf{Data \& Analytics:} SQL , Data Modeling, Data Visualization, Business Intelligence, KPI Development\\[3pt]
+\textbf{Technical:} Python, Java, JavaScript, React.js, Node.js, REST APIs, MySQL, MongoDB
+
+%----------------------------------%
+% PROJECTS
+%----------------------------------%
+\section{Projects}
+\vspace{-2pt}
+
+\newcommand{\project}[5]{%
+  \noindent
+  \href{#1}{\faGithub~\textbf{#2}} \hfill #3\\[-1pt]
+  \textbf{#4}\\[-5pt]
+  \begin{resume_list}
+    #5
+  \end{resume_list}
+  \vspace{4pt}
+}
+
+\project{https://github.com/fixpoint-tech}
+{Smart Mobile Ticketing Platform – Domino's Sri Lanka}
+{2025 – Present}
+{Group Project}{
+  \item Conducted requirements analysis and developed functional specifications for 30+ outlets.
+  \item Defined KPIs and acceptance criteria, resulting in a 40\% reduction in ticket resolution time.
+}
+
+\vspace{6pt}
+\project{https://github.com/Chandima0406/NovaScript.git}
+{NovaScript – AI-Driven Research Management System}
+{2025}
+{Group Project}{
+  \item Collected and analyzed requirements for 100+ researchers using interviews and surveys.
+  \item Created user stories and process models to guide AI-based proposal generation.
+}
+
+\vspace{6pt}
+\project{https://github.com/vindyakodithuwakku02/gocart.git}
+{Multi-Vendor E-Commerce Platform}
+{2024}
+{Individual Project}{
+  \item Conducted market analysis and requirements documentation for vendor and admin workflows.
+  \item Designed functional specifications improving order flow and system usability.
+}
+\newpage
+\vspace{6pt}
+\project{https://github.com/Chandima0406/E-Satahan.git}
+{E-Satahan — Academic Notes Sharing Platform}
+{2024}
+{Group Project}{
+  \item Performed gap analysis and developed process documentation for 500+ users.
+  \item Led validation with stakeholder feedback; deployed successfully online.
+}
+
+\vspace{6pt}
+\project{https://github.com/vindyakodithuwakku02/pos-system.git}
+{Restaurant POS System}
+{2023}
+{Individual Project}
+{
+  \item Defined project requirements, process maps, and use cases for POS functionality.
+}
+
+
+%----------------------------------%
+% CERTIFICATIONS
+%----------------------------------%
+\section{Certifications}
+\vspace{-1pt}
+
+\textbf{Career Essentials in Business Analysis} — Microsoft \& LinkedIn (2025) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_businessanalysis-careeressentials-microsoft-activity-7371193871919398914-PKak}{Certificate}\\[3pt]
+\textbf{Career Essentials in Data Analysis} — Microsoft \& LinkedIn (2024) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_dataanalysis-careeressentials-microsoft-activity-7379124237950750720-kKmD}{Certificate}\\[3pt]
+\textbf{Career Essentials in Project Management} — Microsoft \& LinkedIn (2025) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_projectmanagement-careeressentials-microsoft-activity-7374470702059438080-zbfj}{Certificate}\\[3pt]
+\textbf{Foundations of Project Management} — University of Moratuwa (2024) | \href{https://open.uom.lk/lms/mod/customcert/verify_certificate.php?code=ATuxOYBBAE&qrcode=1}{Certificate}\\[3pt]
+\textbf{SLASSCOM Professional Skills Program} — Foundation \& Intermediate (2024) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_slasscom-professionalskillsprogram-careerdevelopment-activity-7379038487246860288-PRA0}{Certificate}
+
+%----------------------------------%
+% SOFT SKILLS
+%----------------------------------%
+\section{Soft Skills}
+\vspace{-1pt}
+Stakeholder Management, Communication, Negotiation, Documentation \& Reporting, Analytical Thinking, Problem Solving, Scheduling \& Planning, Decision Making, Adaptability, Critical Thinking, Leadership, Collaboration, Time Management
+
+%----------------------------------%
+% ACHIEVEMENTS
+%----------------------------------%
+\section{Achievements}
+\vspace{-1pt}
+
+SmartMedix – Brainstorm 2025 (Semi-Finalist) \hfill IEEE EMBS, University of Moratuwa\\
+Conducted business analysis for AI-driven healthcare optimization — Top 20 national projects
+
+\vspace{5pt}
+\noindent Sensora – SLIoT Challenge 2025 (Semi-Finalist) \hfill University of Moratuwa\\
+Performed requirements analysis for IoT environmental monitoring — National semi-finalist
+
+%----------------------------------%
+% VOLUNTEERING & LEADERSHIP
+%----------------------------------%
+\section{Volunteering \& Leadership}
+\vspace{-1pt}
+Event Host – IEEE Student Branch SUSL (2024–2025): 100+ participant tech events\\
+Knowledge Team – IEEE SB SUSL (2024): Peer-learning and technical content creation\\
+Finance Team – IEEE Day SUSL (2024): Event budgeting and sponsorship tracking\\
+Content Team – STEMUp AI Initiative (2024): Educational AI literacy content\\
+Logistics – GeekZone v1.0 (2024): Technical setup for hackathon
+
+%----------------------------------%
+% REFERENCES
+%----------------------------------%
+\vspace{-2pt}
+\section{References}
+\vspace{-1pt}
+
+\textbf{Prof. B.T.G.S. Kumara}\\
+Professor in Computer Science, Faculty of Computing\\
+Sabaragamuwa University of Sri Lanka\\
+Email: \href{mailto:kumara@foc.sab.ac.lk}{kumara@foc.sab.ac.lk}\\
+Phone: +94 71 443 1193
+
+\vspace{6pt}
+\noindent\textbf{Mrs. Hiruni Senevirathne}\\
+Senior Software Engineer, Sysco Labs Company\\
+Email: \href{mailto:Hiruni.Senevirathne@sysco.com}{Hiruni.Senevirathne@sysco.com}\\
+Phone: +94 71 205 2959
+
+\end{document}

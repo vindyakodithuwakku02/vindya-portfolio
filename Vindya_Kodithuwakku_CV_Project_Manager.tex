@@ -1,0 +1,264 @@
+%%%%
+% Vindya Kodithuwakku — Project Manager Intern CV (2025)
+% Final polished version — aligned, readable, ATS-optimized
+%%%%
+\documentclass[letterpaper,11pt]{article}
+
+%====================%
+% Dependencies
+%====================%
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{charter}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%====================%
+% Colors
+%====================%
+\definecolor{accentTitle}{HTML}{a16f0b}
+\definecolor{accentText}{HTML}{a16f0b}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+%====================%
+% Margins & Layout
+%====================%
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.4in}
+
+\setstretch{1.15}
+\setlength{\parskip}{1pt}
+\setlength{\parsep}{0pt}
+\setlength{\itemsep}{1pt}
+\setlength{\parindent}{0pt}
+\flushbottom
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%====================%
+% Section Formatting
+%====================%
+\titleformat{\section}{
+  \vspace{-2pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+%====================%
+% Custom Commands
+%====================%
+\newenvironment{resume_list}{
+  \vspace{-1pt}
+  \begin{itemize}[itemsep=2pt, leftmargin=14pt]
+}{
+  \end{itemize}\vspace{-2pt}
+}
+\renewcommand\labelitemi{--}
+\setlist[itemize]{topsep=1pt, itemsep=0pt, parsep=0pt, partopsep=0pt}
+
+%====================%
+% Document Start
+%====================%
+\begin{document}
+\fontsize{11}{13}\selectfont
+\justifying
+
+%----------------------------------%
+% HEADER
+%----------------------------------%
+\begin{center}
+{\Huge\color{accentTitle}\textbf{Vindya Kodithuwakku}}\\[3pt]
+{\large\textbf{Project Manager Intern}}\\[4pt]
+\href{mailto:vindyasubodhi@gmail.com}{\faEnvelope~vindyasubodhi@gmail.com} ~
+\href{https://github.com/vindyakodithuwakku02}{\faGithub~github.com/vindyakodithuwakku02} ~
+\href{https://www.linkedin.com/in/vindya-kodithuwakku-bb6187202}{\faLinkedin~linkedin.com/in/vindya-kodithuwakku}\\[2pt]
+\href{tel:+94713602885}{\faPhone~+94 71 360 2885} ~
+\faMapMarker*~Galle, Sri Lanka ~
+\href{https://vindyakodithuwakku02.github.io/my_portfolio/}{\faGlobe~Portfolio}\\[4pt]
+{\color{accentLine}\hrule}
+\end{center}
+
+\fontsize{12.5}{13.5}\selectfont
+
+%----------------------------------%
+% PROFILE SUMMARY
+%----------------------------------%
+\vspace{-20pt}
+\section{Profile Summary}
+\vspace{-2pt}
+\justifying
+Ambitious and organized undergraduate passionate about project management, Agile delivery, and effective team leadership. Experienced in coordinating multidisciplinary teams, planning sprints, and mitigating risks in fast-paced environments. Skilled in stakeholder communication, scheduling, and performance tracking, ensuring timely, high-quality project outcomes.
+
+%----------------------------------%
+% EDUCATION
+%----------------------------------%
+\section{Education}
+\vspace{-1pt}
+
+\textbf{BSc (Hons) in Computing \& Information Systems (UG)} \hfill 2023 – Present\\
+Sabaragamuwa University of Sri Lanka\\
+Current GPA: 3.77 / 4.00
+
+\vspace{8pt}
+\noindent\textbf{Sanghamitta Balika Vidyalaya – Galle} \hfill 2013 – 2021\\
+G.C.E. A/L (Physical Science) – Combined Maths (B), Chemistry (B), Physics (C) — 2021\\
+G.C.E. O/L – 9 A Passes — 2018
+
+%----------------------------------%
+% TECHNICAL SKILLS
+%----------------------------------%
+\section{Technical Skills}
+\vspace{-1pt}
+
+\textbf{Project Management Tools:} Jira, Trello, Microsoft Project, Confluence, Microsoft 365, Figma\\[3pt]
+\textbf{Data \& Reporting:} Power BI, Excel, Data Visualization, Project Reporting, Performance Metrics\\[3pt]
+\textbf{Technical:} Python, Java, JavaScript, React.js, Node.js, REST APIs, MySQL, MongoDB
+
+%----------------------------------%
+% PROJECTS
+%----------------------------------%
+\section{Projects}
+\vspace{-2pt}
+
+\newcommand{\project}[5]{%
+  \noindent
+  \href{#1}{\faGithub~\textbf{#2}} \hfill #3\\[-1pt]
+  \textbf{#4}\\[-5pt]
+  \begin{resume_list}
+    #5
+  \end{resume_list}
+  \vspace{4pt}
+}
+
+\project{https://github.com/fixpoint-tech}
+{Smart Mobile Ticketing Platform – Domino's Sri Lanka}
+{2025 – Present}
+{Group Project}{
+  \item Led cross-functional team to design and deploy a digital ticketing system for 30+ outlets.
+  \item Managed sprints, backlog prioritization, and stakeholder communication.
+  \item Delivered 40\% faster issue resolution and ensured 99.9\% uptime.
+}
+
+\vspace{12pt}
+\project{https://github.com/Chandima0406/NovaScript.git}
+{NovaScript – AI-Driven Research Management System}
+{2025}
+{Group Project}{
+  \item Directed complete project lifecycle for research users, defining milestones and deliverables.
+  \item Facilitated Agile sprints and retrospectives; improved proposal efficiency by 60\%.
+}
+
+\vspace{12pt}
+\project{https://github.com/vindyakodithuwakku02/gocart.git}
+{Multi-Vendor E-Commerce Platform}
+{2024}
+{Individual Project}{
+  \item Planned roadmap, tracked progress, and ensured delivery of marketplace modules using Jira.
+  \item Oversaw cross-functional tasks between frontend and backend teams.
+}
+
+\newpage
+
+\vspace{12pt}
+\project{https://github.com/Chandima0406/E-Satahan.git}
+{E-Satahan — Academic Notes Sharing Platform}
+{2024}
+{Group Project}{
+  \item Supervised team throughout design, development, and deployment phases.
+  \item Delivered platform serving many students; conducted stakeholder reviews.
+  \item Live at: \href{https://esatahan.infinityfree.me}{esatahan.infinityfree.me}
+}
+
+\vspace{6pt}
+\project{https://github.com/vindyakodithuwakku02/pos-system.git}
+{Restaurant POS System}
+{2023}
+{Individual Project}{
+  \item Managed scope, timeline, and deliverables for POS implementation from concept to release.
+}
+
+
+%----------------------------------%
+% CERTIFICATIONS
+%----------------------------------%
+\section{Certifications}
+\vspace{-1pt}
+
+\textnormal{Career Essentials in Project Management} — Microsoft \& LinkedIn (2025) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_projectmanagement-careeressentials-microsoft-activity-7374470702059438080-zbfj}{Certificate}\\[3pt]
+\textnormal{Foundations of Project Management} — University of Moratuwa (2024) | \href{https://open.uom.lk/lms/mod/customcert/verify_certificate.php?code=ATuxOYBBAE&qrcode=1}{Certificate}\\[3pt]
+\textnormal{Career Essentials in Business Analysis} — Microsoft \& LinkedIn (2025) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_businessanalysis-careeressentials-microsoft-activity-7371193871919398914-PKak}{Certificate}\\[3pt]
+\textnormal{Career Essentials in Data Analysis} — Microsoft \& LinkedIn (2024) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_dataanalysis-careeressentials-microsoft-activity-7379124237950750720-kKmD}{Certificate}\\[3pt]
+\textnormal{SLASSCOM Professional Skills Program} — Foundation \& Intermediate (2024) | \href{https://www.linkedin.com/posts/vindya-kodithuwakku-bb6187202_slasscom-professionalskillsprogram-careerdevelopment-activity-7379038487246860288-PRA0}{Certificate}
+
+%----------------------------------%
+% SOFT SKILLS
+%----------------------------------%
+\section{Soft Skills}
+\vspace{-1pt}
+Agile \& Scrum, Leadership, Stakeholder Communication, Risk Management, Strategic Planning, Team Coordination, Conflict Resolution, Change Management, Decision Making, Time Management, Adaptability, Problem Solving, Collaboration
+
+%----------------------------------%
+% ACHIEVEMENTS
+%----------------------------------%
+\section{Achievements}
+\vspace{-1pt}
+
+SmartMedix – Brainstorm 2025 (Semi-Finalist) \hfill IEEE EMBS, University of Moratuwa\\
+Led project planning and coordination for AI-driven healthcare optimization — Top 20 national projects
+
+\vspace{5pt}
+\noindent Sensora – SLIoT Challenge 2025 (Semi-Finalist) \hfill University of Moratuwa\\
+Directed IoT environmental monitoring project team — National semi-finalist
+
+%----------------------------------%
+% VOLUNTEERING & LEADERSHIP
+%----------------------------------%
+\section{Volunteering \& Leadership}
+\vspace{-1pt}
+Event Host – IEEE Student Branch SUSL (2024–2025): 100+ participant tech events\\
+Knowledge Team – IEEE SB SUSL (2024): Peer-learning and technical content creation\\
+Finance Team – IEEE Day SUSL (2024): Event budgeting and sponsorship tracking\\
+Content Team – STEMUp AI Initiative (2024): Educational AI literacy content\\
+Logistics – GeekZone v1.0 (2024): Technical setup for hackathon
+
+
+%----------------------------------%
+% REFERENCES
+%----------------------------------%
+\section{References}
+\vspace{-1pt}
+
+\begin{minipage}[t]{0.50\textwidth}
+\textbf{Prof. B.T.G.S. Kumara}\\
+Professor in Computer Science\\
+Faculty of Computing,\\
+Sabaragamuwa University of Sri Lanka\\
+Email: \href{mailto:kumara@foc.sab.ac.lk}{kumara@foc.sab.ac.lk}\\
+Phone: +94 71 443 1193
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+\textbf{Mrs. Hiruni Senevirathne}\\
+Senior Software Engineer, Sysco Labs Company\\
+Email: \href{mailto:Hiruni.Senevirathne@sysco.com}{Hiruni.Senevirathne@sysco.com}\\
+Phone: +94 71 205 2959
+\end{minipage}
+
+
+
+\end{document}

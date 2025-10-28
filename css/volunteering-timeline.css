@@ -1,0 +1,139 @@
+.volunteering-timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 3px solid #007bff;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 22px; /* reduced gap between cards */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-marker {
+  position: absolute;
+  left: -13px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-content {
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 12px 18px; /* reduced vertical padding */
+  margin-left: 30px;
+  position: relative;
+  min-height: 0; /* ensure no minimum height */
+}
+.volunteering-period {
+  font-size: 0.95rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.volunteering-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.volunteering-organization {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+.volunteering-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+.volunteering-badge.current {
+  background: #e3f2fd;
+  color: #007bff;
+}
+.volunteering-badge.completed {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+.volunteering-links {
+  margin-top: 8px;
+}
+.volunteering-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.volunteering-links a:hover {
+  color: #0056b3;
+}
+.volunteering-links i {
+  margin-right: 6px;
+  font-size: 1.1em;
+}
+@media (max-width: 768px) {
+  .volunteering-timeline {
+    padding-left: 0;
+    border-left: none;
+  }
+  .timeline-content {
+    margin-left: 0;
+    padding: 10px 8px; /* reduced padding for mobile */
+  }
+  .timeline-marker {
+    display: none;
+  }
+}
+
+/* Dark mode styles for timeline */
+body.dark-mode .volunteering-timeline {
+  border-left: 3px solid #1976d2;
+}
+body.dark-mode .timeline-content {
+  background: #142447;
+  color: #e3eafc;
+  box-shadow: 0 2px 8px rgba(20,36,71,0.12);
+}
+body.dark-mode .timeline-marker {
+  background: #142447;
+  border: 3px solid #1976d2;
+}
+body.dark-mode .volunteering-period {
+  color: #90caf9;
+}
+body.dark-mode .volunteering-title {
+  color: #e3eafc;
+}
+body.dark-mode .volunteering-organization {
+  color: #b0b8d1;
+}
+body.dark-mode .volunteering-badge.current {
+  background: #1976d2;
+  color: #fff;
+}
+body.dark-mode .volunteering-badge.completed {
+  background: #388e3c;
+  color: #fff;
+}
+body.dark-mode .volunteering-links a {
+  color: #90caf9;
+}
+body.dark-mode .volunteering-links a:hover {
+  color: #42a5f5;
+}
